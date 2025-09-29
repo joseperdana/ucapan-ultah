@@ -82,9 +82,18 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function tampilkanHalaman(idHalaman) {
-      semuaHalaman.forEach(h => h.classList.remove('aktif'));
-      document.getElementById(idHalaman).classList.add('aktif');
-  }
+    semuaHalaman.forEach(h => h.classList.remove('aktif'));
+    document.getElementById(idHalaman).classList.add('aktif');
+
+    // <-- LOGIKA BARU DI SINI
+    // Jika halaman surat yang tampil, izinkan scroll.
+    // Jika halaman lain, matikan scroll.
+    if (idHalaman === 'halaman-surat') {
+        document.body.classList.remove('body-no-scroll');
+    } else {
+        document.body.classList.add('body-no-scroll');
+    }
+}
 
   function tampilkanPertanyaan() {
       if (indeksPertanyaan < questions.length) {
