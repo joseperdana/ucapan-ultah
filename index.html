@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebuah Pesan Untukmu...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="background-animasi"></div>
+
+    <div id="animasi-bunga-jatuh"></div>
+    <audio id="background-music" loop></audio>
+
+    <div class="container">
+        <div id="halaman-pembuka" class="halaman aktif">
+            <h1>Hai Kamu!</h1>
+            <p>Emang bener kamu pacarnya Jose?</p>
+            <button id="tombol-mulai">Iya, bener dong!</button>
+        </div>
+
+        <div id="halaman-kuis" class="halaman">
+            <h2>Ujian Dulu Yaa...</h2>
+            <div id="kuis-kontainer">
+                <p id="pertanyaan-kuis"></p>
+                <input type="text" id="jawaban-kuis" placeholder="Ketik jawabanmu di sini...">
+                <button id="tombol-jawab-kuis">Jawab</button>
+            </div>
+            <p id="kuis-feedback"></p>
+        </div>
+
+        <div id="halaman-jebakan" class="halaman">
+            <h2>Oke, pertanyaan terakhir...</h2>
+            <p>Kayaknya hari ini ada yang ulang tahun ya?</p>
+            <div class="tombol-container">
+                <button id="tombol-mau">Iya dong!</button>
+                <button id="tombol-tidak">Nggak kok</button>
+            </div>
+        </div>
+        
+        <div id="halaman-prank" class="halaman">
+            <h2>ehe, maaf ini cuma prank... HEHEHE</h2>
+        </div>
+        
+        <div id="halaman-loading-palsu" class="halaman">
+            <h2 id="loading-text">Loading Perasaan... ❤️</h2>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+            <p id="loading-percentage">99%</p>
+            <button id="tombol-darurat" style="display: none;">Lanjutin Aja Deh!</button>
+        </div>
+
+        <div id="halaman-surat" class="halaman">
+            <img src="assets/foto1.jpg" alt="Foto Kenangan" class="foto-header">
+            <h2>Happy Birthday, Sayangku! <span class="heart">❤️</span></h2>
+            <p id="isi-surat"></p>
+            <p style="font-weight: bold; margin-top: 20px;">Dari seseorang yang selalu sayang kamu,<br>Jose</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
