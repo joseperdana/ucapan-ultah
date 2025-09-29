@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // --- PENGATURAN YANG BISA KAMU UBAH ---
   const questions = [
       { question: "Kapan tanggal jadian kita? (format: DD/MM/YYYY)", answer: "11/11/2021" },
-      { question: "Di mana tempat pertama jose jemput fenna? (huruf kecil semua yaa)", answer: "bioskop" },
+      { question: "Di mana tempat pertama jose jemput fenna? (huruf kecil semua yaa)", answer: "roketto" },
       { question: "Nama mamanya jose sapa ya?", answer: "wita" },
       { question: "Tempat kita nganu hohohoo", answer: "mobil" },
       { question: "1+1*0", answer: "1" }
